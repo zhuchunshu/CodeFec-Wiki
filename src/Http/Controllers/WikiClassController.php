@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Plugins\wiki\src\http\Controllers;
+namespace App\Plugins\Wiki\src\Http\Controllers;
 
 use Dcat\Admin\Form;
 use Dcat\Admin\Grid;
