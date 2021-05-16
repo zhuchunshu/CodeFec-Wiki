@@ -1,0 +1,8 @@
+{
+    "name":"Wiki",
+    "namespace" : "\\App\\Plugins\\Wiki",
+    "dirname" : "Wiki",
+    "boot" : [
+        "Boot"
+    ]
+}
