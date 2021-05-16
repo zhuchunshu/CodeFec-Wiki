@@ -9,6 +9,7 @@ use Dcat\Admin\Admin;
 use Dcat\Admin\Layout\Row;
 use Dcat\Admin\Layout\Column;
 use Dcat\Admin\Layout\Content;
+use Illuminate\Support\Facades\Schema;
 use App\Plugins\Wiki\src\Models\WikiClass;
 use App\Plugins\Wiki\src\Http\Repositories\Wiki;
 use Dcat\Admin\Http\Controllers\AdminController;
@@ -165,7 +166,9 @@ class WikiController extends AdminController
             }
         });
 JS);
-        return $content
+        
+        if (Schema::hasTable('wiki_class') && Schema::hasTable('wiki')) {
+            return $content
             ->translation($this->translation())
             ->title($this->title())
             ->description($this->description()['index'] ?? trans('admin.list'))
@@ -177,6 +180,13 @@ JS);
                     });
                 }
             );
+        }else{
+            return $content
+            ->translation($this->translation())
+            ->title($this->title())
+            ->description($this->description()['index'] ?? trans('admin.list'))
+            ->body("数据库迁移完毕,请刷新");
+        }
     }
 
     /**
