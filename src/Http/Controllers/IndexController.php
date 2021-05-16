@@ -7,7 +7,7 @@ use Dcat\Admin\Layout\Column;
 use App\Plugins\Wiki\src\database\CreateWikiTable;
 use App\Plugins\Wiki\src\database\UpdateWikiTable;
 use App\Plugins\Wiki\src\database\CreateWikiClassTable;
-use App\Plugins\Wiki\Src\Models\WikiClass;
+use App\Plugins\Wiki\src\Models\WikiClass;
 
 class IndexController{
 

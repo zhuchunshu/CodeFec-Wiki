@@ -8,7 +8,7 @@ use Dcat\Admin\Show;
 use Dcat\Admin\Layout\Content;
 use App\Http\Controllers\Controller;
 use Dcat\Admin\Http\Controllers\AdminController;
-use App\Plugins\Wiki\Src\Http\Repositories\WikiClass;
+use App\Plugins\Wiki\src\Http\Repositories\WikiClass;
 
 class WikiClassController extends Controller
 {

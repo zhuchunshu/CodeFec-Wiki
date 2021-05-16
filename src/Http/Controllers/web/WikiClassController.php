@@ -4,8 +4,8 @@ namespace App\Plugins\Wiki\src\Http\Controllers\web;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Plugins\Wiki\Src\Models\Wiki;
-use App\Plugins\Wiki\Src\Models\WikiClass;
+use App\Plugins\Wiki\src\Models\Wiki;
+use App\Plugins\Wiki\src\Models\WikiClass;
 
 class WikiClassController extends Controller
 {

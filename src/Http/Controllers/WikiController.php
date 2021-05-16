@@ -9,8 +9,8 @@ use Dcat\Admin\Admin;
 use Dcat\Admin\Layout\Row;
 use Dcat\Admin\Layout\Column;
 use Dcat\Admin\Layout\Content;
-use App\Plugins\Wiki\Src\Models\WikiClass;
-use App\Plugins\Wiki\Src\Http\Repositories\Wiki;
+use App\Plugins\Wiki\src\Models\WikiClass;
+use App\Plugins\Wiki\src\Http\Repositories\Wiki;
 use Dcat\Admin\Http\Controllers\AdminController;
 
 class WikiController extends AdminController

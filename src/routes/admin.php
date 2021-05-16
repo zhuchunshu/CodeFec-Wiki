@@ -1,8 +1,8 @@
 <?php
 
 use App\Plugins\Wiki\src\Http\Controllers\IndexController;
-use App\Plugins\wiki\src\http\Controllers\WikiClassController;
-use App\Plugins\Wiki\Src\Http\Controllers\WikiController;
+use App\Plugins\wiki\src\Http\Controllers\WikiClassController;
+use App\Plugins\Wiki\src\Http\Controllers\WikiController;
 use Illuminate\Support\Facades\Route;
 
 Route::post('/Sqlmigrate', [IndexController::class, 'SqlMigrate']);
