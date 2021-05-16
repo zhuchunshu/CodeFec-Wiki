@@ -65,6 +65,15 @@
                                                 </div>
                                             </a>
                                         </li>
+                                    @else
+                                    <li class="page-item page-next disabled">
+                                        <a class="page-link"
+                                            href="#">
+                                            <div class="page-item-subtitle">下一页</div>
+                                            <div class="page-item-title">暂无
+                                            </div>
+                                        </a>
+                                    </li>
                                     @endif
                                 </ul>
                             </div>
