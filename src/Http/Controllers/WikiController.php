@@ -24,6 +24,7 @@ class WikiController extends AdminController
     protected function grid()
     {
         return Grid::make(new Wiki(['user','class']), function (Grid $grid) {
+            $grid->model()->orderBy('id', 'desc');
             $grid->column('id')->sortable();
             $grid->column('title',"标题");
             $grid->column('message');

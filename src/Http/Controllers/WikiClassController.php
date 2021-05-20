@@ -20,6 +20,7 @@ class WikiClassController extends Controller
     protected function grid()
     {
         return Grid::make(new WikiClass(['user']), function (Grid $grid) {
+            $grid->model()->orderBy('id', 'desc');
             $grid->column('id')->sortable();
             $grid->column('title','标题');
             $grid->column('ename','英文名');
